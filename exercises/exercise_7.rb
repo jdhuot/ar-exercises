@@ -10,3 +10,9 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+ask = gets.chomp
+
+add = Store.create(:name => "#{ask}")
+
+puts add.errors[:annual_revenue]
